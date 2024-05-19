@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">  
+    
+        <form  class="myform" onsubmit="return submit(event)">
+          <h2>REGISRATION FORM</h2>
+            <label for="Name">Name :</label>
+            <input type="text"  id= "Name" name="Name"  required><br>
+            <label for="email">email :</label>
+            <input type="email"  id="email" name="email" required><br>
+            <label for="number">number :</label>
+            <input type="number" id="number" name="number" required><br>
+            <label for="time">time :</label>
+            <input type="time" id="time"  name="time" required><br>
+            <button type="button" class="button">submit</button>
+            </form>
+            
+            </div>
+            <script >
+              function submit(event){
+                event.preventDefault(); 
+                const name=document.getElementById(name).value;
+                const email=document.getElementById(email).value;
+                const number=document.getElementById(number).value;
+                const time=document.getElementById(time).value;
+                
+                
+              
+              
+              console.log('Name:', name);
+              console.log('email:', email);
+              console.log('number:', number);
+              console.log('time:', time);
+              document.getElementById('myForm').reset();
+              }
+              </script>
+</body>
+</html>
+
+ 
